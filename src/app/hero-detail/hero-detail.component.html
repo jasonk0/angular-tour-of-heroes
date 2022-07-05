@@ -1,0 +1,6 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}}的详情</h2>
+  <span>编号： {{hero.id}}</span>
+  <label for="hero-name">英雄姓名:</label>
+  <input type="text" id="hero-name" [(ngModel)]="hero.name" placeholder="这里填写名字">
+</div>
