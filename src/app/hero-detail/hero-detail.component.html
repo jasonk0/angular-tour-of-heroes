@@ -3,4 +3,7 @@
   <span>编号： {{hero.id}}</span>
   <label for="hero-name">英雄姓名:</label>
   <input type="text" id="hero-name" [(ngModel)]="hero.name" placeholder="这里填写名字">
+  <hr>
+  <button type="button" (click)="goBack()">退！退！退！</button>
+  <button type="button" (click)="save(hero)">保存修改</button>
 </div>
