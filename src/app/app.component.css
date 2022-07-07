@@ -19,3 +19,13 @@ nav a:hover {
 nav a.active {
   background-color: black;
 }
+.levitation {
+  position: fixed;
+  top: 11vh;
+  right: 5vw;
+}
+.toggle {
+  position: fixed;
+  top: 3vh;
+  right: 5vw;
+}

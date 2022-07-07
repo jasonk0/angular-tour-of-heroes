@@ -1,8 +1,8 @@
 <h2>大英雄们</h2>
 
 <ul class="heroes" >
-  <li *ngFor="let hero of heroes; trackBy: trackByItems">
-      <a routerLink="/detail/{{hero.id}}">
+  <li *ngFor="let hero of heroes; trackBy: trackByItems" [@flyInOut]>
+      <a routerLink="/detail/{{hero.id}}" >
     <span class="badge">{{hero.id}}</span>
     <span class="name">
          {{hero.name}}
@@ -12,6 +12,7 @@
   (click)="delete(hero)">x</button>
   </li>
 </ul>
+
 <div>
   <label for="new-hero">Hero name: </label>
   <input id="new-hero" #heroName />
@@ -20,6 +21,11 @@
   <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
     添加英雄
   </button>
+</div>
+
+<button (click)="toggle()">Toggle</button>
+<div *ngIf="isIn" [@flyInOut]="isIn" class="open-close-container">
+<p>这个元素的状态{{isIn ? 'in' : ' '}}</p>
 </div>
 
 

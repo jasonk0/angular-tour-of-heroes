@@ -5,3 +5,21 @@
 .ng-invalid:not(form)  {
   border-left: 5px solid #a94442; /* red */
 }
+.container {
+  position: fixed;
+  background-color: #fff;
+  height: 80vh;
+  width: 80vw;
+  top: 13vh;
+  right: 8vw;
+  box-shadow: 1px 0px 5px 1px rgba(0, 0, 0,.2);
+  transition: 200ms;
+}
+.container:hover{
+   box-shadow: 1px 0px 5px 1px rgba(0, 0, 0,.4);
+}
+.levitation {
+  position: fixed;
+  top: 11vh;
+  right: 5vw;
+}

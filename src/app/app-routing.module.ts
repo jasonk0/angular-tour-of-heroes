@@ -8,11 +8,13 @@ import { HeroesComponent } from './heroes/heroes.component';
 const routes: Routes = [
   {
     path: "heroes",
-    component: HeroesComponent
+    component: HeroesComponent,
+    data: {animation :"HeroesLists"}
   },
   {
     path: "dashboard",
-    component: DashBoardComponent
+    component: DashBoardComponent,
+    data: {animation :"DashBoard"}
   },
   {
     path: "detail/:id",
